@@ -12,6 +12,6 @@ public class Question1 {
         l1
                 .stream()
                 .collect(Collectors.groupingBy(String::valueOf, Collectors.counting()))
-                .forEach((key, value) -> System.out.println(key + "->" + value));
+                .forEach((key, value) -> System.out.println(key + "-" + value));
     }
 }
